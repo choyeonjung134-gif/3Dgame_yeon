@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     private CharacterController controller;
     void Start()
     {
-       
+        controller = GetComponent<CharacterController>();
     }
 
     public void OnMove(InputValue value)
