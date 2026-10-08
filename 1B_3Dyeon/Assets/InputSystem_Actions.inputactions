@@ -302,7 +302,7 @@
                     "path": "<Joystick>/trigger",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Joystick",
+                    "groups": "Keyboard&Mouse;Joystick",
                     "action": "Attack",
                     "isComposite": false,
                     "isPartOfComposite": false
