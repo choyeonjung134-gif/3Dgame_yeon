@@ -14,6 +14,7 @@ public class Health : MonoBehaviour
     float lastHitTime = -999f;
     public GameObject dropPrefab;     // 적만 연결
     public float dropChance = 0.3f;   // 30%
+    public GameObject hitEffect;   // HitEffect Prefab
 
 
 
@@ -33,6 +34,10 @@ public class Health : MonoBehaviour
         currentHp -= damage;
         Debug.Log(name + " HP: " + currentHp);
         UpdateBar();
+        Vector3 hitPos = transform.position + Vector3.up;
+        if (hitEffect != null)
+            Instantiate(hitEffect, hitPos, Quaternion.identity);
+
 
         if (currentHp <= 0) Die();
         else Blink();

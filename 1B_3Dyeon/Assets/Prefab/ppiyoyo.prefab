@@ -80,3 +80,6 @@ MonoBehaviour:
   moveSpeed: 5
   jumpPower: 5
   gravity: -20
+  mouseSensitivity: 0.2
+  cameraPivot: {fileID: 0}
+  cameraTransform: {fileID: 0}

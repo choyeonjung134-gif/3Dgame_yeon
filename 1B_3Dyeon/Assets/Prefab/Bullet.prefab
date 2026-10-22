@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1114698275790421730}
   - component: {fileID: 5936119207453412915}
   - component: {fileID: -161970241516914803}
+  - component: {fileID: -6435439933741855195}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -140,3 +141,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-6435439933741855195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6248029306764832979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8bdf6cc432062d4dbdcf257806bd9c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Bullet
+  damage: 1
+  lifeTime: 2
+  targetTag: Enemy
+  ownerTag: Player
