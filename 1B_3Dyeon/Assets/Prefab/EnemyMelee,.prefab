@@ -70,6 +70,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Health
   maxHp: 3
   currentHp: 0
+  invincibleTime: 0
+  dropPrefab: {fileID: 5011733617659424888, guid: 74a03044e68f1434681dacb15d1da15e, type: 3}
+  dropChance: 0.3
   hpSlider: {fileID: 0}
 --- !u!114 &3775154323227296517
 MonoBehaviour:

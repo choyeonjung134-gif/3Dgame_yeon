@@ -23132,6 +23132,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Health
   maxHp: 3
   currentHp: 0
+  invincibleTime: 0
   hpSlider: {fileID: 0}
 --- !u!65 &437779223
 BoxCollider:
@@ -35300,7 +35301,7 @@ Transform:
   m_GameObject: {fileID: 673861667}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.64, y: 1.23, z: 0}
+  m_LocalPosition: {x: -0.19, y: -0.24, z: -1.59}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -50592,6 +50593,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Health
   maxHp: 10
   currentHp: 0
+  invincibleTime: 0.5
   hpSlider: {fileID: 320177081}
 --- !u!1001 &982208044
 PrefabInstance:
@@ -65883,6 +65885,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Health
   maxHp: 3
   currentHp: 0
+  invincibleTime: 0
   hpSlider: {fileID: 0}
 --- !u!65 &1265068669
 BoxCollider:
@@ -72177,6 +72180,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Health
   maxHp: 3
   currentHp: 0
+  invincibleTime: 0
   hpSlider: {fileID: 0}
 --- !u!65 &1397432444
 BoxCollider:
@@ -72865,6 +72869,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Health
   maxHp: 3
   currentHp: 0
+  invincibleTime: 0
   hpSlider: {fileID: 0}
 --- !u!65 &1411020221
 BoxCollider:
@@ -99055,6 +99060,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Health
   maxHp: 3
   currentHp: 0
+  invincibleTime: 0
   hpSlider: {fileID: 0}
 --- !u!65 &1864666412
 BoxCollider:
@@ -101535,6 +101541,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Health
   maxHp: 3
   currentHp: 0
+  invincibleTime: 0
   hpSlider: {fileID: 0}
 --- !u!65 &1903224789
 BoxCollider:
@@ -114180,16 +114187,28 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4965215953557704586, guid: 3400ff05bceda5d45a87a790c482b329, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.851026
+      objectReference: {fileID: 0}
+    - target: {fileID: 4965215953557704586, guid: 3400ff05bceda5d45a87a790c482b329, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.9185594
+      objectReference: {fileID: 0}
+    - target: {fileID: 4965215953557704586, guid: 3400ff05bceda5d45a87a790c482b329, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.9185594
+      objectReference: {fileID: 0}
+    - target: {fileID: 4965215953557704586, guid: 3400ff05bceda5d45a87a790c482b329, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -1.65
       objectReference: {fileID: 0}
     - target: {fileID: 4965215953557704586, guid: 3400ff05bceda5d45a87a790c482b329, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.91856
       objectReference: {fileID: 0}
     - target: {fileID: 4965215953557704586, guid: 3400ff05bceda5d45a87a790c482b329, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 8
+      value: 13.717
       objectReference: {fileID: 0}
     - target: {fileID: 4965215953557704586, guid: 3400ff05bceda5d45a87a790c482b329, type: 3}
       propertyPath: m_LocalRotation.w
