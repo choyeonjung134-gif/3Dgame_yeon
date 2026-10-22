@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
     public GameObject gameOverPanel;
     public string titleSceneName = "Title";
+    public GameObject clearPanel;
 
     void Awake()
     {
@@ -30,5 +31,13 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(titleSceneName);
     }
+    public void GameClear()
+    {
+        clearPanel.SetActive(true);
+        Time.timeScale = 0f;
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+    }
+
 
 }

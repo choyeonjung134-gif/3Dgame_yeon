@@ -9,6 +9,8 @@ public class WaveSpawner : MonoBehaviour
     public int addPerWave = 2;    // 웨이브마다 추가
     public float spawnGap = 0.5f; // 한 마리씩 나오는 간격
     public TMP_Text waveText;     // 비워 둬도 됨
+    public int lastWave = 0;   // 0 이면 끝없음
+
 
     int wave = 0;
     int toSpawn = 0;              // 이번 웨이브에 남은 수
@@ -35,6 +37,14 @@ public class WaveSpawner : MonoBehaviour
         }
         int alive = GameObject.FindGameObjectsWithTag("Enemy").Length;
         if (alive > 0) return;            // 다 잡을 때까지 대기
+
+        if (lastWave > 0 && wave == lastWave)
+        {
+            GameManager.Instance.GameClear();
+            enabled = false;
+            return;
+        }
+
 
         wave++;
         toSpawn = firstCount + addPerWave * (wave - 1);
