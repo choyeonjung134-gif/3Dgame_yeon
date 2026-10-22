@@ -42,9 +42,9 @@ public class Health : MonoBehaviour
     {
         if (CompareTag("Player"))
         {
-            Debug.Log("게임 오버");
-            Time.timeScale = 0f;      // 게임 정지
+            GameManager.Instance.GameOver();
         }
+
         else
         {
             // Die 의 else 안, 맨 위에 추가
