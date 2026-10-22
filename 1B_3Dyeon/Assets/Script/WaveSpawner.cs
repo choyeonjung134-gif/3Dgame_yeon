@@ -9,7 +9,7 @@ public class WaveSpawner : MonoBehaviour
     public int addPerWave = 2;    // 웨이브마다 추가
     public float spawnGap = 0.5f; // 한 마리씩 나오는 간격
     public TMP_Text waveText;     // 비워 둬도 됨
-    public int lastWave = 0;   // 0 이면 끝없음
+    public int lastWave = 2;   // 0 이면 끝없음
 
 
     int wave = 0;
