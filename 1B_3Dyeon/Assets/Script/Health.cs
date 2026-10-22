@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class Health : MonoBehaviour
 {
     [Header("체력 정보 리스트")]
@@ -8,6 +9,7 @@ public class Health : MonoBehaviour
     [Range(0,1000)]
     public int maxHp = 3;
     public int currentHp;
+    public static int killCount;     // 모든 Health 가 같이 쓰는 값 하나
 
 
     public Slider hpSlider;      // 플레이어만 연결
@@ -45,6 +47,9 @@ public class Health : MonoBehaviour
         }
         else
         {
+            // Die 의 else 안, 맨 위에 추가
+            killCount++;
+
             Destroy(gameObject);
         }
     }
