@@ -17,17 +17,14 @@ public class RewardCalc : MonoBehaviour
     [ContextMenu("플레이 시간")]
     void PrintTime()
     {
-        int a = playSeconds * (int)expRate;
-        Debug.Log("플레이 시간" + a + "년");
+        int h = playSeconds / 3600;
+        int m = playSeconds % 3600 / 60;
+        int s = playSeconds % 60;
+        // 일반: 1시간 2분 5초
+        Debug.Log("플레이 시간 " + h + "시간 " + m + "분 " + s + "초");
+        // 고난이도: 1:02:05
+        Debug.Log("플레이 시간 " + h + ":" + m / 10 + m % 10 + ":" + s / 10 + s % 10);
 
-
-
-     
     }
-
-
-
-
-
 
 }
