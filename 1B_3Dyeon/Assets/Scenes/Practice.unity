@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 817779793}
   - component: {fileID: 817779792}
   - component: {fileID: 817779791}
+  - component: {fileID: 817779796}
   m_Layer: 0
   m_Name: Tester
   m_TagString: Untagged
@@ -222,6 +223,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &817779796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 817779790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c41c80c6d5a2e5e418837cd95592b3a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LevelSystem
+  expPerKill: 35000
+  killCount: 3
 --- !u!1 &1241348966
 GameObject:
   m_ObjectHideFlags: 0

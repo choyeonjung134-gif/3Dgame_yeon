@@ -4,20 +4,24 @@ public class LevelSystem : MonoBehaviour
 {
     public int expPerKill = 35000;
     public int killCount = 3;
-   
 
-    [ContextMenu("레벨업")]
-    void PrintTime()
+
+    [ContextMenu("레벨 계산")]
+    void CalculateLevel()
     {
-        int h = expPerKill / 600;
-        int m = expPerKill % 2/30;
-        int s = expPerKill % 60;
-        // 일반: 1시간 2분 5초
-        Debug.Log("레벨업 " + h + "LV" + m + "경험치" + s + "Hp");
-        // 고난이도: 1:02:05
-        Debug.Log("플레이 시간 " + h + ":" + m / 10 + m % 10 + ":" + s / 10 + s % 10);
+        int level = 1;
+        int exp = 0;
 
+        for (int kill = 1; kill <= killCount; kill++)
+        {
+            exp += expPerKill;
+            while (exp >= level * 10000)
+            {
+                exp -= level * 10000;
+                level++;
+                Debug.Log("레벨업! Lv " + level + " (" + kill + " 마리째)");
+            }
+        }
+        Debug.Log("최종 Lv " + level + ", 경험치 " + exp + " / " + level * 10000);
     }
-
 }
-
